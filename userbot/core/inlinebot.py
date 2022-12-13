@@ -24,7 +24,6 @@ from ..helpers.functions.utube import (
     result_formatter,
     ytsearch_data,
 )
-from ..plugins import mention
 from ..sql_helper.globals import gvarstatus
 from . import CMD_INFO, GRP_INFO, PLG_INFO, check_owner
 from .cmdinfo import cmdinfo, get_key, getkey, plugininfo
@@ -77,9 +76,7 @@ def main_menu():
         switch_button = [
             (
                 Button.inline(f"Extra", data="extra_menu"),
-                Button.inline(
-                    f"Useless", data="useless_menu"
-                ),
+                Button.inline(f"Useless", data="useless_menu"),
             ),
             (Button.inline("Close Menu", data="close"),),
         ]
@@ -120,11 +117,7 @@ async def article_builder(event, method):
         title = "Premium Vcky"
         description = "Deploy yourself."
         query = "Deploy?."
-        buttons = [
-            (
-                Button.url("Source code", "www.vckyprofile.netlify.app"),
-            )
-        ]
+        buttons = [(Button.url("Source code", "www.vckyprofile.netlify.app"),)]
 
     elif method == "pmpermit":
         query = gvarstatus("pmpermit_text")
