@@ -67,9 +67,7 @@ def main_menu():
             Button.inline(f"Tools", data="tools_menu"),
             Button.inline(f"Utils", data="utils_menu"),
         ),
-        (
-            Button.inline(f"Extra", data="extra_menu"),
-        ),
+        (Button.inline(f"Extra", data="extra_menu"),),
     ]
     if Config.BADCAT:
         switch_button = [
