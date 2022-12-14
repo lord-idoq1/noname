@@ -14,7 +14,7 @@ from ..Config import Config
 from ..core.managers import edit_or_reply
 from ..helpers.functions import get_readable_time
 from ..sql_helper.globals import gvarstatus
-from . import StartTime, catub, mention, reply_id
+from . import StartTime, catub, reply_id
 
 plugin_category = "tools"
 
@@ -23,7 +23,7 @@ temp_ = "Pong!"
 temp = "Pong!\n`{ping} ms`"
 if Config.BADCAT:
     temp_ = "__**☞ Pong**__"
-    temp = "__**☞ Pong**__\n➥ `{ping}` **ms**\n➥ __**Bot of **__{mention}"
+    temp = "__**☞ Pong**__\n➥ `{ping}` **ms**"
 
 
 @catub.cat_cmd(
@@ -63,7 +63,6 @@ async def _(event):
             ANIME = f"**“{data['quote']}” - {data['character']} ({data['anime']})**"
         caption = ping_temp.format(
             ANIME=ANIME,
-            mention=mention,
             uptime=uptime,
             ping=ms,
         )
