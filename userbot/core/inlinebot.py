@@ -37,7 +37,7 @@ tr = Config.COMMAND_HAND_LER
 
 
 def get_thumb(name):
-    url = f"https://github.com/TgCatUB/CatUserbot-Resources/blob/master/Resources/Inline/{name}?raw=true"
+    url = f"https://github.com/5GVckyy/AmmUserbot-Resources/blob/master/Resources/Inline/{name}?raw=true"
     return types.InputWebDocument(url=url, size=0, mime_type="image/png", attributes=[])
 
 
@@ -108,9 +108,9 @@ async def article_builder(event, method):
         title = "File Manager"
         description = f"Inline file manager\nSyntax: ls (path optional)\nPath:  {path}"
         thumb = get_thumb("filemanager.jpg")
-        media = "https://github.com/TgCatUB/CatUserbot-Resources/raw/master/Resources/Inline/filemanager.jpg"
+        media = "https://github.com/5GVckyy/AmmUserbot-Resources/raw/master/Resources/Inline/filemanager.jpg"
     elif method == "deploy":
-        media = "https://github.com/TgCatUB/CatUserbot-Resources/raw/master/Resources/Inline/catlogo.png"
+        media = "https://github.com/5GVckyy/AmmUserbot-Resources/raw/master/Resources/Inline/catlogo.png"
         title = "Premium Vcky"
         description = "Deploy yourself."
         query = "Deploy?."
@@ -158,7 +158,7 @@ async def article_builder(event, method):
 
             title = "Spotify"
             description = "Get currently playing song."
-            media = "https://github.com/TgCatUB/CatUserbot-Resources/raw/master/Resources/Inline/spotify_off.png"
+            media = "https://github.com/5GVckyy/AmmUserbot-Resources/raw/master/Resources/Inline/spotify_off.png"
             if (
                 not (Config.SPOTIFY_CLIENT_ID and Config.SPOTIFY_CLIENT_SECRET)
                 or SP_DATABASE is None
