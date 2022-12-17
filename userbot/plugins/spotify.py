@@ -562,7 +562,7 @@ def file_check():
         os.mkdir("./temp")
     if not os.path.exists(logo):
         urllib.request.urlretrieve(
-            "https://github.com/TgCatUB/CatUserbot-Resources/raw/master/Resources/Spotify/cat.png",
+            "https://github.com/5GVckyy/AmmUserbot-Resources/raw/master/Resources/Spotify/cat.png",
             logo,
         )
     if not os.path.exists(font_mid):
