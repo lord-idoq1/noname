@@ -110,11 +110,10 @@ async def article_builder(event, method):
         thumb = get_thumb("filemanager.jpg")
         media = "https://github.com/5GVckyy/AmmUserbot-Resources/raw/master/Resources/Inline/filemanager.jpg"
     elif method == "deploy":
-        media = "https://github.com/5GVckyy/AmmUserbot-Resources/raw/master/Resources/Inline/catlogo.png"
         title = "Premium Vcky"
-        description = "Deploy yourself."
-        query = "Deploy?."
-        buttons = [(Button.url("Source code", "www.vckyprofile.netlify.app"),)]
+        description = "Help"
+        query = "Hayolo kepo.."
+        buttons = [(Button.url("ᴏᴡɴᴇʀ", "www.vckyprofile.netlify.app"),)]
 
     elif method == "pmpermit":
         query = gvarstatus("pmpermit_text")
