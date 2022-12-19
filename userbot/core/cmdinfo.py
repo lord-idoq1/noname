@@ -16,14 +16,14 @@ extractor = URLExtract()
 cmdprefix = Config.COMMAND_HAND_LER
 
 hemojis = {
-    "admin": "👮‍♂️",
-    "bot": "🤖",
-    "fun": "🎨",
-    "misc": "🧩",
-    "tools": "🧰",
-    "utils": "🗂",
-    "extra": "➕",
-    "useless": "⚰️",
+    "admin",
+    "bot",
+    "fun",
+    "misc",
+    "tools",
+    "utils",
+    "extra",
+    "useless",
 }
 
 
