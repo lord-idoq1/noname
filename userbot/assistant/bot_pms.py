@@ -115,8 +115,7 @@ async def bot_start(event):  # sourcery skip: low-code-quality
             )
         ]
     else:
-        start_msg = "Hey Master!\
-            \nHow can i help you ?"
+        start_msg = "kepo Mulu Iduplu Kontol!"
         buttons = None
     try:
         if custompic:
