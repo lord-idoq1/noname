@@ -3,10 +3,10 @@ from sample_config import Config
 
 class Development(Config):
     # get this values from the my.telegram.org
-    APP_ID = 
-    API_HASH = ""
+    APP_ID = "22617384"
+    API_HASH = "1e73a59e5b4efa2c79ba97d0ebaff5ba'
     # the name to display in your alive message
-    ALIVE_NAME = "vcky"
+    ALIVE_NAME = "ido"
     # create any PostgreSQL database (i recommend to use elephantsql) and paste that link here
     DB_URI = "postgresql://wysyuysj:VvaFHwihd0jBbSpq66bRE0cOuHXICczy@tiny.db.elephantsql.com/wysyuysj"
     # After cloning the repo and installing requirements do python3 stringsetup.py an fill that value with this
